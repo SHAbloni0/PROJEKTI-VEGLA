@@ -3,6 +3,5 @@ using namespace std;
 
 int main(){
 
-cout<<"i am very tall";
 
 }
