@@ -17,6 +17,28 @@ void showMenu() {
 
 
 int main(){
-
+    int choice;
+    double num1, num2;
     
+    do {
+        showMenu();
+        cin >> choice;
+        
+        if (choice >= 1 && choice <= 6) {
+            cout << "Enter first number: ";
+            cin >> num1;
+            cout << "Enter second number: ";
+            cin >> num2;
+        }
+        else if (choice == 7) {
+            cout << "Enter a number: ";
+            cin >> num1;  // Only need one number for square root
+        }
+        
+
+
+
+
+
+    } while (choice != 8);
 }
