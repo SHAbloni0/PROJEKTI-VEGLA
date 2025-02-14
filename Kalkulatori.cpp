@@ -32,10 +32,46 @@ int main(){
         }
         else if (choice == 7) {
             cout << "Enter a number: ";
-            cin >> num1;  // Only need one number for square root
+            cin >> num1;  //vetem nje numer per Rrenje katrore
         }
         
-
+        switch (choice) {
+            case 1:
+                cout << "Result: " << num1 + num2 << endl;
+                break;
+            case 2:
+                cout << "Result: " << num1 - num2 << endl;
+                break;
+            case 3:
+                cout << "Result: " << num1 * num2 << endl;
+                break;
+            case 4:
+                if (num2 != 0)
+                    cout << "Result: " << num1 / num2 << endl;
+                else
+                    cout << "Error: Division by zero!" << endl;
+                break;
+            case 5:
+                cout << "Result: " << pow(num1, num2) << endl;
+                break;
+            case 6:
+                if (static_cast<int>(num2) != 0)
+                    cout << "Result: " << static_cast<int>(num1) % static_cast<int>(num2) << endl;
+                else
+                    cout << "Error: Modulus by zero!" << endl;
+                break;
+            case 7:
+                if (num1 >= 0)
+                    cout << "Result: " << sqrt(num1) << endl;
+                else
+                    cout << "Error: Negative number!" << endl;
+                break;
+            case 8:
+                cout << "Exiting..." << endl;
+                break;
+            default:
+                cout << "Invalid choice! Try again." << endl;
+        }
 
 
 
